@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fake Payment - TravelDream</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #a9c4ec;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .btn { margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #088f84;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .btn:hover {
+      background-color: #025694;
+    }
+    .fake-popup {
+      margin-top: 2rem;
+      background: rgb(127, 168, 230);
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: inline-block;
+      text-align: left;
+    }
+ .book{
+  margin-bottom:3rem;
+ }    
+
+
+.itinerary-section {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #4188e4, #184080); /* Coral gradient */
+  color: #fff;
+  text-align: center;
+}
+
+.itinerary-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.itinerary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+  gap: 25px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .itinerary-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .itinerary-grid {
+    grid-template-columns: 1fr; /* 1 per row on small screens */
+  }
+}
+
+
+.itinerary-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.itinerary-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+.itinerary-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.itinerary-card h3 {
+  font-size: 20px;
+  margin: 15px 0 10px;
+  color: #fff;
+}
+
+.itinerary-card p {
+  font-size: 16px;
+  padding: 0 15px 20px;
+  color: #fefefe;
+}
+
+
+    
+  </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+</head>
+<body>
+    <div class="book"><h1 >Booking Information</h1>
+    
+    <p id="tourName"></p>
+    <p id="tourPrice"></p></div>
+
+<section class="itinerary-section">
+  <h2>What's Included in Your Tour</h2>
+  <div class="itinerary-grid">
+
+    <div class="itinerary-card">
+      <img src="https://content.jdmagicbox.com/v2/comp/mumbai/y6/022pxx22.xx22.181127122316.w3y6/catalogue/sagar-fast-food-and-catering-service-dharavi-mumbai-fast-food-o6qkolcv13.jpg">
+      <h3> All Meals Included</h3>
+      <p>Enjoy local delicacies with breakfast, lunch, and dinner at handpicked restaurants.</p>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL0aYQfYFTU1tQA2gXYKpYr38QC_gvHG_j3A&s" alt="Hotel Stay">
+      <h3>Premium Hotel Stay</h3>
+      <p>Stay in 3-star or 4-star hotels with free Wi-Fi and luxurious amenities.</p>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="https://cdn.dnaindia.com/sites/default/files/2022/05/03/1674214-may-teamology-article-2-dna.jpg?im=FitAndFill=(1200,900)" alt="Transport">
+      <h3>Comfortable Transport</h3>
+      <p>Travel in AC coaches with airport transfers and local sightseeing convenience.</p>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="https://www.nbn.org.il/wp-content/uploads/2021/07/tourguide_25735371_cropped-1.jpg" alt="Tour Guide">
+      <h3> Professional Guide</h3>
+      <p>English-speaking licensed guide to enhance your experience and safety.</p>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/007/183/312/small/travel-insurance-form-with-model-and-policy-document-free-photo.jpg" alt="Travel Insurance">
+      <h3> Travel Insurance</h3>
+      <p>Basic insurance covering health, baggage loss, and travel disruptions.</p>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/72/0b/48.jpg" alt="Sightseeing">
+      <h3>Guided Sightseeing</h3>
+      <p>Entry tickets and curated tours to must-see attractions and hidden gems.</p>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="https://www.aracari.com/wp-content/uploads/2019/01/Welcome-Pack-e1546900330358.jpg" alt="Welcome Kit">
+      <h3>Welcome Kit</h3>
+      <p>Receive a travel bag, printed itinerary, local SIM card, and souvenirs.</p>
+    </div>
+
+    <div class="itinerary-card">
+      <img src="https://media.istockphoto.com/id/637122726/photo/24-7-worldwide-customer-service-support.jpg?s=612x612&w=0&k=20&c=jbVK4xJ5je1QBB26ERo3mq6LtiM6EV1KnYF3quNPNHg=" alt="Support">
+      <h3>24/7 Support</h3>
+      <p>Dedicated helpline for any travel assistance throughout your journey.</p>
+    </div>
+
+  </div>
+
+</section>
+  <button class="btn" onclick="showFakePayment()">Book Now</button>
+
+  <div id="fake-popup" class="fake-popup" style="display: none;">
+    <h2>Payment Processing...</h2>
+    <p>This is a simulated payment flow.</p>
+    <button class="btn" onclick="completePayment()">Complete Payment</button>
+  </div> 
+
+    <script>
+       
+        function getURLParameter(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        const name = getURLParameter('name');
+        const price = getURLParameter('price');
+
+        
+        document.getElementById('tourName').textContent = `Tour Name: ${name}`;
+        document.getElementById('tourPrice').textContent = `Price: ${price}`;
+        function showFakePayment() {
+      document.getElementById("fake-popup").style.display = "block";
+    }
+
+    function completePayment() {
+      alert("Payment successful! (simulated)");
+      window.location.href = "thankyou.html";
+    }
+    </script>
+</body>
+</html>
+
+  
+</body>
+</html>
+
